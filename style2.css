@@ -1,0 +1,146 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.full-container {
+    color: white;
+    background-image: url("img/back.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-group {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    width: 60%;
+    /* align-items: center; */
+}
+
+input:focus {
+    box-shadow: 0 0 0 3px rgb(0, 0, 255);
+}
+
+.input-group label {
+    font-weight: bold;
+    color:rgba(160, 244, 255, 0.752)
+}
+
+input {
+    /* width: 100%; */
+    height: 35px;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(92, 0, 150);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button {
+    color:rgb(0, 2, 104);
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: 40%;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 255, 76, 0.858);
+    transition: background-color 0.5s linear;
+ 
+}
+
+.button:hover {
+    background-color: var(--lilac2);
+    transition: background-color 0.5s linear;
+}
+
+.button.restart {
+    background-color: rgb(255, 0, 0);
+    margin-bottom: 30px;
+}
+
+.button.restart:hover {
+    font-size:x-large;
+    background-color: magenta;
+    transition: all 1s linear;
+}
+
+h1 {
+    margin-top: 0;
+    color: rgb(217, 157, 255);
+}
+
+.sub-container{
+    background-color: rgba(4, 14, 52, 0.482);
+    padding: 50px;
+    border-radius: 40px;
+}
+
+#catimg{
+    display: none;
+    height: 30vh;
+    width: 60%;
+    min-width: 200px;
+}
+
+
+:root {
+--lilac: hsla(294, 22%, 43%, 1);
+--lilac2: hsla(329, 34%, 49%, 1);
+--oruby: hsla(349, 49%, 43%, 1);
+--rusty: hsla(355, 68%, 53%, 1);
+--imperial: hsla(353, 98%, 55%, 1);
+}
+
+
+
+
+
+/* #img{
+    display: none;
+    height: 50vh;
+    width: 30%;
+    min-width: 200px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+}
+
+#result {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: 25px;
+    text-align: center;
+    color: rgba(151, 11, 11, 0.795);
+    /* border: 3px solid rgb(255, 0, 0);
+    border-radius: 20%; */
+    /* padding: 10px 10px; */
+    
